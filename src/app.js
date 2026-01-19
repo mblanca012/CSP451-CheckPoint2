@@ -35,7 +35,7 @@ app.listen(PORT, () => {
 
 // ---------------- API FEATURE (Checkpoint 2) ----------------
 
-// API health check
+// Returns current API status, uptime, and timestamp
 app.get("/api/health", (req, res) => {
   res.json({
     success: true,
@@ -45,7 +45,7 @@ app.get("/api/health", (req, res) => {
   });
 });
 
-// API version info
+// Returns API name and current version
 app.get("/api/version", (req, res) => {
   res.json({
     success: true,
@@ -54,7 +54,7 @@ app.get("/api/version", (req, res) => {
   });
 });
 
-// API echo (test POST payloads)
+// Echoes back POST request payload for testing
 app.post("/api/echo", (req, res) => {
   res.json({
     success: true,
@@ -62,7 +62,7 @@ app.post("/api/echo", (req, res) => {
   });
 });
 
-// Example users endpoint
+// Returns a static list of example users
 app.get("/api/users", (req, res) => {
   res.json({
     success: true,
