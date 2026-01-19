@@ -42,3 +42,9 @@ To intentionally create a merge conflict, edit the same lines in one of:
 npm test
 npm run lint
 ```
+
+## Database
+- GET /api/db/config
+- GET /api/db/health
+
+
