@@ -90,5 +90,9 @@ app.post("/api/auth/login", (req, res) => {
 
 // POST logout endpoint
 app.post("/api/auth/logout", (req, res) => {
-  res.json({ success: true, message: "Logged out successfully" });
+ res.json({
+  success: true,
+  message: "Logged out successfully",
+  timestamp: new Date().toISOString()
 });
+
